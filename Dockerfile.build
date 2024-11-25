@@ -10,7 +10,3 @@ RUN apk update \
     && npm install \
     && mv node_modules node_modules_cache \
     && rm -rf package.json npm-shrinkwrap.json /tmp/*
-
-  EXPOSE 3000
-
-  CMD ["npm", "start"]
